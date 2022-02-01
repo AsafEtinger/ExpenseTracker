@@ -5,7 +5,7 @@ const addTransactionSlice = createSlice({
   initialState: { transactionArray: [] },
   reducers: {
     addANewTransaction: (state, action) => {
-      state.transactionArray = [...state.transactionArray, action.payload];
+      state.transactionArray = [action.payload, ...state.transactionArray];
     },
   },
 });

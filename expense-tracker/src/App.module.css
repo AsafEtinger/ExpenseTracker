@@ -1,0 +1,5 @@
+.DisplayTransactions {
+  height: 40vh;
+  overflow: auto;
+  border: red solid 2px;
+}

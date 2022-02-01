@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import classes from "./DisplayTransactions.module.css";
 const DisplayTransactions = () => {
   const { transactionArray } = useSelector((state) => state.transactions);
 
@@ -11,7 +12,7 @@ const DisplayTransactions = () => {
     );
   });
 
-  return <ul>{transactionsList}</ul>;
+  return <ul className={classes.container}>{transactionsList}</ul>;
 };
 
 export default DisplayTransactions;
