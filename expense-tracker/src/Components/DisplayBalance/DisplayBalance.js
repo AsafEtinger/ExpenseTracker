@@ -1,6 +1,6 @@
 import IncomeOrExpense from "./IncomeOrExpense";
 import { useSelector } from "react-redux";
-
+import classes from "./DisplayBalance.module.css";
 const DisplayBalance = () => {
   const { transactionArray } = useSelector((state) => state.transactions);
 
@@ -21,10 +21,12 @@ const DisplayBalance = () => {
   const balance = incomeSum + expensesSum;
 
   return (
-    <div>
-      <h3>Your Balance</h3>
-      <h3>{balance}</h3>
-      <div>
+    <div className={classes.container}>
+      <div className={classes.balance}>
+        <h3 className={classes.yourBalanceText}>Your Balance</h3>
+        <h3 className={classes.balanceNumber}>{balance}₪</h3>
+      </div>
+      <div className={classes.incomeOrExpense}>
         <IncomeOrExpense type="Income" sum={incomeSum} />
         <IncomeOrExpense type="Expense" sum={expensesSum} />
       </div>

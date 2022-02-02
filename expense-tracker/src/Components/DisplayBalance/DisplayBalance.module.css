@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.balance {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.678);
+  width: 70%;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.incomeOrExpense {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 1em;
+  background-color: rgba(255, 255, 255, 0.377);
+  width: 70%;
+  margin: 1em auto auto;
+}
+
+.yourBalanceText {
+  padding: 1em;
+  margin: 1em;
+  font-weight: 400;
+}
+
+.balanceNumber {
+  padding: 1em;
+  margin: 1em;
+  font-weight: 400;
+}

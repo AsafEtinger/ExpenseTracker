@@ -4,12 +4,14 @@ import DisplayTransactions from "./Components/DisplayTransactions/DisplayTransac
 import AddingATransAction from "./Components/AddingATransaction/AddingATransaction";
 function App() {
   return (
-    <div className="App">
-      <DisplayBalance />
-      <div className={classes.DisplayTransactions}>
-        <DisplayTransactions />
+    <div className={classes.app}>
+      <div className={classes.app2}>
+        <DisplayBalance />
+        <div className={classes.divide}>
+          <DisplayTransactions />
+          <AddingATransAction />
+        </div>
       </div>
-      <AddingATransAction />
     </div>
   );
 }

@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.DisplayTransactions {
+  overflow-y: scroll;
+  height: 40vh;
+  overflow: auto;
+  padding: 0;
+}
+
+.DisplayTransactions::-webkit-scrollbar {
+  display: none;
+}
+
+.DisplayTransactions {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.transactionPositive {
+  list-style-type: none;
+  background-color: rgba(203, 251, 172, 0.733);
+  border-radius: 10px;
+  font-weight: 400;
+  margin: 1em;
+  padding: 0 1em;
+}
+
+.transactionNegative {
+  list-style-type: none;
+  background-color: rgba(255, 188, 188, 0.692);
+  border-radius: 10px;
+  font-weight: 400;
+  margin: 1em;
+  padding: 0 1em;
+}
+
+.transactionPositive h3 {
+  font-weight: 400;
+}
+
+.transactionNegative h3 {
+  font-weight: 400;
+}
