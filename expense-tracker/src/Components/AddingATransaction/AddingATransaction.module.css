@@ -1,0 +1,27 @@
+.input {
+  border: none;
+  margin: 1em;
+  border-radius: 10px;
+  padding: 1em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.inputNumberTitle {
+  font-size: 0.5em;
+}
+
+.addBtn {
+  border-radius: 10px;
+  border: none;
+  padding: 1em;
+  background-color: rgba(255, 194, 159, 0.363);
+}
+
+.addBtn:hover {
+  cursor: pointer;
+  background-color: rgb(255, 194, 159);
+}
