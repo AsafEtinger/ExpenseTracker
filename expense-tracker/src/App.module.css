@@ -1,6 +1,7 @@
 .app {
   min-height: 100vh;
   display: flex;
+  color: rgb(86, 82, 90);
 }
 
 .app2 {
